@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+
 typedef int (*f1)(int,int);
 typedef f1 (*f2)(char,int,int);
 
