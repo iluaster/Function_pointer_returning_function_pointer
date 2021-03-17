@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<stdlib.h>
 
 typedef int (*f1)(int,int);
 typedef f1 (*f2)(char,int,int);
@@ -18,15 +18,19 @@ f1 arithmetic(char a,int b,int c)
 {
 	int (*fptr)(int,int);
 
-	if(a=='+')
-	{
+	switch(a){
+
+	  case '+':
 		printf("%d+%d=",b,c);
 		fptr=add;
-	}
-	if(a=='-')
-	{
+		break;
+	  case '-':
 		printf("%d-%d=",b,c);
 		fptr=sub;
+		break;
+	  default:
+		exit(1);
+		break;
 	}
 	return fptr;
 }
