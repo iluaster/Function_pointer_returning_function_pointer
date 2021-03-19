@@ -26,7 +26,8 @@ return value is the sum of 5+2
 <pre>
   40058f:	5d                   	pop    rbp
   400590:	c3                   	ret    
-
+</pre>
+<pre>
 0000000000400591 <code>&lt;sub&gt;</code>:
   400591:	55                   	push   rbp
   400592:	48 89 e5             	mov    rbp,rsp
