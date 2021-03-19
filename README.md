@@ -75,13 +75,13 @@ so<br>
   4005be:	83 f8 2b             	cmp    eax,0x2b
   4005c1:	74 07                	je     4005ca <arithmetic+0x23>
 </pre>
-compare eax and 0x2b '+' sign.<br>
+compare eax with 0x2b '+' sign.<br>
 if equal then jump to 4005ca<br>
 <pre>
   4005c3:	83 f8 2d             	cmp    eax,0x2d
   4005c6:	74 23                	je     4005eb <arithmetic+0x44>
 </pre>
-compare eax and 0x2d '-' sign.<br>
+compare eax with 0x2d '-' sign.<br>
 if equal then jump to 4005eb<br>
 <pre>
   4005c8:	eb 42                	jmp    40060c <arithmetic+0x65>
